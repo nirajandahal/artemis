@@ -1,0 +1,443 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+section {
+	padding: 40px 0;
+}
+
+.at-cta-btn{
+    background-color: #ff9900;
+    color:#fff;
+    padding:0.6rem 1rem;
+    display: inline-block;
+    border-radius: 5px;
+	text-decoration: none;
+}
+.at-cta-btn:hover {
+    background-color: #d58000;
+}
+
+.a t-links {
+    
+}
+
+a{
+	text-decoration: none;
+}
+
+.primary-color {
+}
+
+.primary-background-color {
+	background-color: #005d85;
+	color:#fff;
+}
+
+.primary-outline-color {
+
+}
+
+.primary-outline-background-color {
+
+}
+
+.secondary-color {
+	color: #ff9900;
+}
+
+.primary-link{
+	color: #ff9900;
+}
+
+.section-heading {
+	text-align: center;
+	margin: 0 0 40px 0;
+}
+
+.section-heading h1 {
+	font-weight: 700;
+	font-size: 48px;
+	margin:0 0 0 0;
+}
+
+.section-heading a {
+	font-weight: 600;
+}	
+
+.card-link {
+	position: relative;
+}
+
+.card-link-anchor{
+	position: absolute;
+	content:'';
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+}
+
+
+@media only screen and (max-width:575px) {
+	section{
+		padding:16px 0 !important;
+		margin:16px 0 !important;
+	}
+
+	.section-heading h1 {
+		font-size: 28px;
+	}
+
+	.section-heading a {
+		font-size: 14px;
+	}
+
+	.horizontal-slider-mobile{
+		display: block;
+		width:560px;
+		overflow-y: auto;
+	}
+	
+}
+/* constant css ends */
+
+/* header css starts  */
+
+.top-header-bar{
+	padding:8px 0;
+	font-size: 14px;
+}
+
+.logo-header{
+	padding: 16px 0;
+}
+
+.artemis-nav{
+	justify-content: flex-end;
+}
+
+.artemis-nav ul {
+	display: flex;
+	align-items:center;
+	margin:0;
+	padding:0;
+}
+
+.artemis-nav ul li {
+	margin: 0 0 0 24px;
+}
+
+.artemis-nav ul li a {
+	color:#333;
+	font-weight: 700;
+	position: relative;
+	font-size: 16px;
+}
+
+.artemis-nav ul li a:hover, .artemis-nav ul li a.active{
+	color:#005d85;
+}
+
+.artemis-nav ul li a::after, .artemis-nav ul li a.active::after {
+	position: absolute;
+	content: '';
+	bottom:-8px;
+	right:0;
+	height:2px;
+	width:0%;
+	background-color: #333;
+	transition:0.3s;
+}
+
+.artemis-nav ul li a:hover::after, .artemis-nav ul li a.active::after{
+	position: absolute;
+	width:40%;
+	transition: 0.3s;
+}
+
+@media only screen and (max-width:575px) {
+
+	.logo-header {
+		padding: 8px 8px 0;
+	}
+
+	.artemis-nav {
+		justify-content: space-between;
+		border-bottom: 1px solid #ccc
+	}
+
+	.artemis-nav ul li {
+		margin: 16px 16px 16px 0px;
+	}
+
+	.artemis-nav ul li a {
+		font-size: 14px;
+	}
+}
+
+/* header css ends  */
+
+/* banner css */
+.banner {
+	height:80vh;
+	background : url('../images/banner-background.png') center center no-repeat;
+	background-size: cover;
+	position: relative;
+	margin-bottom : 100px;
+}
+
+.banner .dark-bg-layer{
+	position: absolute;
+	content: '';
+	bottom:0;
+	right:0;
+	height:100%;
+	width:100%;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.dark-bg-layer .banner-text {
+	position: absolute;
+	width:72%;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	text-align:center;
+	padding:32px;
+	color:#fff;
+}
+
+.dark-bg-layer .banner-text h1 {
+	font-weight: 700;
+	font-size: 3rem;
+	margin:0 0 1.5rem 0;
+}
+
+.dark-bg-layer .banner-text p {
+	font-weight: 400;
+	margin: 0 0 1rem 0;
+}
+
+.banner .search-form{
+	position: absolute;
+	background-color: #fff;
+	min-width: 72%;
+	left:50%;
+	bottom:-45px;
+	transform: translate(-50%);
+	box-shadow: 2px 2px 4px #000;
+	padding: 20px 40px;
+	border-radius:50px;
+}
+
+.banner .search-form form{
+	display: flex;
+	justify-content: space-between;
+}
+
+.banner .search-form .search-button {
+	border: none;
+    background-color: #005d85;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    color: #fff;
+}
+
+.banner .search-form .form-control:focus{
+	box-shadow: 0;
+}
+
+@media only screen and (max-width : 575px) {
+
+	.banner {
+		height:64vh;
+		margin-bottom : 280px;
+	}
+
+	.dark-bg-layer .banner-text {
+		width: 100%;
+		text-align: left;
+		padding: 16px;
+	}
+
+	.dark-bg-layer .banner-text h1 {
+		font-size: 2.5rem;
+	}
+
+	.banner .search-form{
+		width:100%;
+		bottom:-240px;
+		border-radius:40px;
+		padding-bottom:32px;
+	}
+
+	.banner .search-form form {
+		display: block;
+	}
+
+	.banner .search-form .search-button {
+    	height: 50px;
+    	width: 100%;
+    	border-radius: 25px;
+	}
+}
+/* banner css */
+
+/* cards css */
+.circular-card {
+	height:256px;
+	width:240px;
+	text-align: center;
+	padding:8px;
+	display: inline-block;
+}
+
+.circular-card img{
+	width:200px;
+	height:200px;
+	border-radius: 50%;
+	margin-bottom:16px;
+}
+
+.circular-card h2{
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.circular-card:hover img{
+	box-shadow: 2px 6px 6px rgb(156, 156, 156);
+}
+
+.circular-card:hover h2{
+	color:#005d85;
+}
+
+.destination-card-1{
+	width:400px;
+	padding: 8px;
+}
+
+.destination-card-1 img{
+	width:360px;
+	height:360px;
+	margin : 0 0 16px 0;
+	border-radius: 20px;
+}
+
+.destination-card-1 h2 {
+	font-size:24px;
+	font-weight: 700;
+	margin: 0 0 8px 0;
+}
+
+.destination-card-1 h6 {
+	margin: 0 0 8px 0;
+}
+
+.destination-card-1 h6 .trek-amount {
+	font-size: 18px;
+	font-weight: 700;
+	color:#338500;
+}
+
+.destination-card-1 small {
+	font-size: 12px;
+	color:#999;
+}
+
+.destination-card-1 p {
+	color:#333;
+}
+
+@media only screen and (max-width:575px) {
+	
+	
+	.destination-card-1{
+		width:320px;
+	}
+	
+	.destination-card-1 img{
+		width:280px;
+		height:280px;
+	}
+	
+	
+}
+/* cards css */
+
+/* trek highlights section css */
+.is-highlights{
+	display: flex;
+	position: relative;
+	padding: 2rem 0;
+}
+
+.is-highlights .highlight-images{
+	border-right: 2px solid #f5f5f5;
+	padding:0 16px 0 0;
+	height:560px;
+}
+
+.is-highlights .highlight-images .image-1{
+	position: absolute;
+	height:20rem;
+	width:20rem;
+}
+
+.is-highlights .highlight-images .image-2{
+	position: absolute;
+	height:20rem;
+	width:20rem;
+	top:15rem;
+	left:10rem;
+	z-index:2
+}
+
+.is-highlights .highlight-images .image-3{
+	position: absolute;
+	height:10rem;
+	width:10rem;
+	top:3.4rem;
+	left:23rem;
+	z-index:2
+}
+
+.is-highlights .highlight-images img{
+	border-radius:10%;
+	border:4px solid #d58000;
+	height:100%;
+	width:100%;
+}
+
+@media only screen and (max-width: 575px) {
+	.is-highlights .highlight-images{
+		border-right: none;
+		height:400px;
+	}
+	
+	.is-highlights .highlight-images .image-1{
+		height:13rem;
+		width:13rem;
+	}
+	
+	.is-highlights .highlight-images .image-2{
+		position: absolute;
+		height:13rem;
+		width:13rem;
+		top:11rem;
+		left:9rem;
+	}
+	
+	.is-highlights .highlight-images .image-3{
+		height:8rem;
+		width:8rem;
+		top:2rem;
+		left:16rem;
+		z-index:2
+	}
+	
+}
+
+/* trek highlights section css */
