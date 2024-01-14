@@ -9,10 +9,15 @@ section {
 .at-cta-btn{
     background-color: #ff9900;
     color:#fff;
-    padding:0.6rem 1rem;
+    padding:0 1rem;
     display: inline-block;
     border-radius: 5px;
 	text-decoration: none;
+	font-weight:600;
+	height:2.5rem;
+	line-height: 2.5rem;
+	font-size: 0.8rem;
+	border:2px;
 }
 .at-cta-btn:hover {
     background-color: #d58000;
@@ -35,7 +40,10 @@ a{
 }
 
 .primary-outline-color {
-
+	border:2px solid #005d85;
+	color:#005d85;
+	background-color: #fff;
+	box-sizing: border-box;
 }
 
 .primary-outline-background-color {
@@ -80,6 +88,11 @@ a{
 
 
 @media only screen and (max-width:575px) {
+
+	.at-cta-btn{
+		font-size: 12px;
+	}
+
 	section{
 		padding:16px 0 !important;
 		margin:16px 0 !important;
@@ -226,7 +239,7 @@ a{
 	left:50%;
 	bottom:-45px;
 	transform: translate(-50%);
-	box-shadow: 2px 2px 4px #000;
+	box-shadow: 0px 2px 4px #ccc;
 	padding: 20px 40px;
 	border-radius:50px;
 }
@@ -411,7 +424,38 @@ a{
 	width:100%;
 }
 
+.is-highlights .highlight-stats h6{
+	font-size: 2rem;
+	color: #f5f5f5;
+	font-weight: 400;
+	margin: 0 0 2rem 0;
+}
+
+.is-highlights .highlight-stats .stat-numbers .stat-single-section {
+ width:40%;
+ display: inline-block;
+ margin: 0 3rem 2rem 0;
+}
+
+.is-highlights .highlight-stats .stat-numbers .stat-single-section h5{
+	font-size: 4rem;
+	font-weight: 700;
+	color:#f5f5f5;
+	margin:0;
+}
+
+.is-highlights .highlight-stats .stat-numbers .stat-single-section p{
+	font-size: 1rem;
+	margin:0;
+	color:#c5f1ff;
+}
+
 @media only screen and (max-width: 575px) {
+
+	.is-highlights{
+		padding: 1rem 0 0 0.5rem;
+	}
+
 	.is-highlights .highlight-images{
 		border-right: none;
 		height:400px;
@@ -437,6 +481,28 @@ a{
 		left:16rem;
 		z-index:2
 	}
+
+	.is-highlights .highlight-stats h6{
+		font-size: 1.5rem;
+	}
+
+	.is-highlights .highlight-stats .stat-numbers .stat-single-section {
+		width:36%;
+		display: inline-block;
+		margin: 0 3rem 2rem 0;
+	   }
+	   
+	   .is-highlights .highlight-stats .stat-numbers .stat-single-section h5{
+		   font-size: 3rem;
+		   font-weight: 700;
+		   margin:0;
+	   }
+	   
+	   .is-highlights .highlight-stats .stat-numbers .stat-single-section p{
+		   font-size: 0.9rem;
+		   margin:0;
+		   color:#c5f1ff;
+	   }
 	
 }
 
