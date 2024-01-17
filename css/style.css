@@ -635,20 +635,40 @@ a{
 	background: linear-gradient(to bottom, #d9f6ff 26%, #fff 100%);
 }
 
+.testimonials-section .testimonials-list {
+	max-width: 80%;
+	margin: auto;
+}
+
 .testimonials-section .circular-card{
 	height:auto;
 	padding: 0 24px;
+	width: 330px;
+}
+
+.testimonials-section .circular-card img {
+	height:140px;
+	width:140px;
 }
 
 @media only screen and (max-width:575px) {
+	.testimonials-section .testimonials-list {
+		max-width:100%;
+	}
 	.testimonials-section .circular-card{
 		width:240px;
+		padding:24px 16px ;
 		margin: 0 16px 0 0;
+		background-color: #c5f1ff;
 	}
 
 	.testimonials-section .circular-card img {
-		height:180px;
-		width:180px;
+		height:80px;
+		width:80px;
+	}
+
+	.testimonials-section .circular-card p{
+		width:220px;
 	}
 }
 
