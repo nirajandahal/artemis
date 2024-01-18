@@ -15,10 +15,11 @@
 
 	<link rel="stylesheet" href="css/style.css">
 
+
 </head>
 <body>
 
-	<header>
+	<header class="sticky-top">
 		<div class="top-header-bar primary-background-color">
 			<div class="container">
 				<div class="row">
@@ -31,6 +32,8 @@
 					</div>
 					<div class="col-6 text-end">
 						+977 9862155336
+						<a href="" class="secondary-background-color badge ms-3">Login</a>
+							<a href="" class="secondary-background-color badge ms-3">Signup</a>
 					</div>
 				</div>
 			</div>
@@ -39,21 +42,25 @@
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-sm-3">
-						<div class="logo">
+						<div class="logo card-link">
+							<a href="" class="card-link-anchor"></a>
 							<img src="images/artemis-logo.png" alt="">
 						</div>
 					</div>
-					<!-- <div class="col-9">
-						<div class="d-flex justify-content-end">
-							<a href="" class="at-cta-btn ms-3">Login</a>
-							<a href="" class="at-cta-btn ms-3">Signup</a>
-						</div>
-					</div> -->
 					<div class="col-sm-9">
 						<div class="artemis-nav d-flex">
 							<ul class="list-unstyled">
 								<li><a href="" class="active">Home</a></li>
-								<li><a href="">Destinations</a></li>
+												<div class="dropdown">
+													<li class="dropdown-toggle" id="dropdownMenuLink" data-bs-toggle="dropdown"><a href="">Destinations</a></li>
+												
+												
+													<div class="dropdown-menu" aria-labelledby="dropdown-destination">
+															<li><a href="">Destinations-1 </a></li>
+															<li><a href="">Destinations-2</a></li>
+													</div>
+												</div>
+									
 								<li><a href="">Fixed Departures</a></li>
 								<li><a href="">Blog</a></li>
 							</ul>
@@ -575,7 +582,7 @@
 					</div>
 					<div class="col-sm-4 order-2 order-sm-3">
 						<div class="footer-information-section">
-							<h6>Social Share</h6>
+							<h6>Popular Destinations</h6>
 							<ul class="footer-links">
 								<li><a href="">Everest Base Camp Trek</a></li>
 								<li><a href="">Annapurna Base Camp Trek</a></li>
@@ -586,7 +593,7 @@
 						</div>
 
 						<div class="footer-information-section">
-							<h6>Social Share</h6>
+							<h6>Popular Articles</h6>
 							<ul class="footer-links">
 								<li><a href="">What you can observe in the Jungles of the Himalayas.</a></li>
 								<li><a href="">When I think I saw a Yeti.</a></li>
