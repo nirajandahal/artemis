@@ -6,6 +6,11 @@ section {
 	padding: 40px 0;
 }
 
+/* ul{
+	margin:0;
+	padding:0;
+} */
+
 .at-cta-btn{
     background-color: #ff9900;
     color:#fff;
@@ -213,7 +218,7 @@ a{
 	}
 
 	.artemis-nav ul li {
-		margin: 16px 16px 16px 0px;
+		margin: 16px 8px 16px 0px;
 	}
 
 	.artemis-nav ul li a {
@@ -221,10 +226,20 @@ a{
 	}
 }
 
+@media only screen and (max-width:380px) {
+	.artemis-nav ul li {
+		margin: 16px 12px 16px 0px;
+	}
+
+	.artemis-nav ul li a {
+		font-size: 12px;
+	}
+}
+
 /* header css ends  */
 
 /* banner css */
-.banner {
+.banner.homepage-banner {
 	height:80vh;
 	background : url('../images/banner-background.png') center center no-repeat;
 	background-size: cover;
@@ -290,13 +305,13 @@ a{
     color: #fff;
 }
 
-.banner .search-form .form-control:focus{
+.banner.homepage-banner .search-form .form-control:focus{
 	box-shadow: 0;
 }
 
 @media only screen and (max-width : 575px) {
 
-	.banner {
+	.banner.homepage-banner {
 		height:64vh;
 		margin-bottom : 280px;
 	}
@@ -311,23 +326,97 @@ a{
 		font-size: 2.5rem;
 	}
 
-	.banner .search-form{
+	.banner.homepage-banner .search-form{
 		width:100%;
 		bottom:-240px;
 		border-radius:40px;
 		padding-bottom:32px;
 	}
 
-	.banner .search-form form {
+	.banner.homepage-banner .search-form form {
 		display: block;
 	}
 
-	.banner .search-form .search-button {
+	.banner.homepage-banner .search-form .search-button {
     	height: 50px;
     	width: 100%;
     	border-radius: 25px;
 	}
 }
+
+/* detail page banner css */
+.banner.detail-page-banner{
+	margin: 0 0 48px 0;
+}
+
+.banner.detail-page-banner img{
+	height:80vh
+}
+
+.banner.detail-page-banner .destination-summary{
+	position: relative;
+}
+
+.banner.detail-page-banner .destination-summary-box {
+	position: absolute;
+	background: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0.9));
+	content:'';
+	left:0;
+	bottom:0;
+	padding: 32px;
+	display: inline-block;
+	width:400px;
+	height:400px;
+	border-radius: 10px 10px 0 0;
+}
+
+.banner.detail-page-banner .carousel-indicators{
+	display: inline-block;
+	right:0;
+	left:auto;
+}
+
+.banner.detail-page-banner .carousel-indicators button {
+	border:2px solid #c5f1ff;
+}
+
+.banner.detail-page-banner .destination-summary .summary-rate {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 16px 0;
+}
+
+.banner.detail-page-banner .destination-summary label {
+	color:#333;
+	font-size: 16px;
+}
+
+.banner.detail-page-banner .destination-summary .summary-rate label small {
+	color:#c90000;
+}
+
+.banner.detail-page-banner .destination-summary .summary-rate div > div {
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.banner.detail-page-banner .destination-summary p {
+	font-weight: 700;
+}
+
+@media only screen and (max-width:575px) {
+
+	.banner.detail-page-banner .destination-summary-box{
+		height:440px;
+		width:100%;
+	}
+
+	.banner.detail-page-banner .carousel-indicators {
+		display: none;
+	}
+}
+
+/* detail page banner css */
 /* banner css */
 
 /* cards css */
@@ -745,6 +834,72 @@ a{
 	}
 }
 /* blogs css */
+
+/* detail page container css */
+.detail-page-container .destination-title {
+	display: flex;
+	justify-content: space-between;
+	border-bottom : 2px solid #ed8e01;
+	margin: 0 0 32px 0;
+}
+
+.detail-page-container .destination-title h1{
+	font-weight: 600;
+}
+
+@media only screen and (max-width:575px) { 
+	.detail-page-container .destination-title {
+		display: block;
+		padding: 0 0 16px 0;
+	}
+
+	.detail-page-container .destination-title h1 {
+		font-size: 24px;
+	}
+}
+
+.detail-page-container p, .detail-page-container .content-good-to-know-section ul  li  {
+	font-size: 16px;
+	line-height: 26px;
+	color: #333;
+	font-weight: 500;
+}
+
+.detail-page-container .detail-page-content-section {
+	margin: 0 0 32px 0;
+}
+
+.detail-page-container .content-includes-excludes ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.detail-page-container h4 {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.detail-page-container .content-itinerary ul li span{
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.detail-page-container #itinerary-detail span {
+	margin: 0 0 8px 0;
+	display: block;
+}
+
+.detail-page-container .content-good-to-know-section {
+	border-top : 2px solid #ed8e01;
+	padding : 24px 0 0 0;
+}
+
+.detail-page-container .content-good-to-know-section ul  li {
+	margin: 0 0 8px 0;
+}
+
+/* detail page container css */
 
 
 /* footer css here */
