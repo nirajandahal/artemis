@@ -391,6 +391,11 @@ a{
 }
 
 .banner.detail-page-banner .carousel-indicators button {
+	height:100px;
+	width:100px;
+}	
+
+.banner.detail-page-banner .carousel-indicators button {
 	border:2px solid #c5f1ff;
 }
 
@@ -898,70 +903,204 @@ form.filter-form label{
 /* listing page css  */
 
 /* detail page container css */
-.detail-page-container .destination-title {
+.destination-title {
 	display: flex;
 	justify-content: space-between;
 	border-bottom : 2px solid #ed8e01;
 	margin: 0 0 32px 0;
 }
 
-.detail-page-container .destination-title h1{
+.destination-title h1{
 	font-weight: 600;
 }
 
 @media only screen and (max-width:575px) { 
-	.detail-page-container .destination-title {
+	.destination-title {
 		display: block;
 		padding: 0 0 16px 0;
 	}
 
-	.detail-page-container .destination-title h1 {
+	.destination-title h1 {
 		font-size: 24px;
 	}
 }
 
-.detail-page-container p, .detail-page-container .content-good-to-know-section ul  li  {
+.detail-page-container p, .detail-page-container .content-good-to-know-section ul  li {
 	font-size: 16px;
 	line-height: 26px;
 	color: #333;
 	font-weight: 500;
 }
 
-.detail-page-container .detail-page-content-section {
+.detail-page-content-section {
 	margin: 0 0 32px 0;
 }
 
-.detail-page-container .content-includes-excludes ul{
+.content-includes-excludes ul{
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 
-.detail-page-container h4 {
+.content-includes-excludes ul li {
+	font-size: 16px;
+	line-height: 32px;;
+	color:#333;
+	font-weight: 500;
+}
+
+h4 {
 	font-size: 24px;
 	font-weight: 700;
 }
 
-.detail-page-container .content-itinerary ul li span{
+.content-itinerary ul li span{
 	font-size: 14px;
 	font-weight: 700;
 }
 
-.detail-page-container #itinerary-detail span {
+#itinerary-detail span {
 	margin: 0 0 8px 0;
 	display: block;
 }
 
-.detail-page-container .content-good-to-know-section {
+.content-good-to-know-section {
 	border-top : 2px solid #ed8e01;
 	padding : 24px 0 0 0;
 }
 
-.detail-page-container .content-good-to-know-section ul  li {
+.content-good-to-know-section ul  li {
 	margin: 0 0 8px 0;
 }
 
 /* detail page container css */
+
+/* booking page css */
+.booking-page-banner, .banner.booking-page-banner img{
+	height:50vh;
+}
+
+.banner.booking-page-banner .carousel-indicators button{
+height:60px !important;
+width:60px !important;
+}
+
+.booking-form{
+	background-color: #d9f6ff;
+	padding:16px;
+}
+
+.booking-form h4{
+	margin: 0;
+	font-size:24px;
+}
+
+.booking-form em {
+	font-size: 14px;
+}
+
+.booking-form .additional-services{
+	margin: 24px 0;
+}
+
+.booking-form .additional-services > div {
+	margin: 0 0 8px 0;
+}
+
+.booking-form .additional-services label{
+	font-size: 14px;
+	font-weight: 600;
+	margin: 0 0 0 4px;
+}
+
+.booking-form .additional-services .form-check-input{
+	border-radius: 50%;
+	border:1px solid #005d85;
+}
+
+.booking-form .additional-services .form-check-input:focus{
+	box-shadow: none;
+}
+
+.booking-form .additional-services .form-check-input:checked{
+	background-color: #005d85;
+	border-color: #005d85;
+}
+
+.booking-form .add-info{
+	margin-top: 24px;
+}
+
+.booking-form .add-info h4{
+	margin: 0 0 16px 0;
+}
+
+.booking-form .add-info .form-group {
+	margin: 0 0 24px 0;
+}
+
+.booking-form .add-info label{
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.booking-form .add-info input {
+	border:1px solid #005d85;
+	height: 48px;
+	line-height: 48px;
+}
+
+.booking-form .at-cta-btn {
+	padding: 0 3rem;
+}
+
+.booking-summary {
+	box-shadow: 0px 0px 6px #ccc;
+	border-radius: 8px;
+	padding:16px;
+}
+
+@media only screen and (min-width:575px){
+	.booking-summary {
+		position:sticky;
+		top:20%;
+	}
+}
+
+.booking-summary h4, .booking-summary h5{
+	font-size: 18px;
+	font-weight: 700;
+	margin: 12px 0;
+}
+
+.booking-summary label {
+	font-size: 14px;
+	color:#333;
+}
+
+.booking-summary p{
+	font-size: 16px;
+	font-weight: 700;
+	color:#005d85;
+	margin: 0 0 8px 0;
+}
+
+.booking-summary .adults, .booking-summary .max-elevation {
+	display: inline-block;
+	width: 120px;
+}
+
+.booking-summary .cost-breakdown div, .booking-summary .final-payment {
+	display:flex;
+	justify-content: space-between;
+}
+
+.booking-summary .final-payment p{
+	font-size: 40px;
+	font-weight: 700;
+	color:#338500;
+}
+/* booking page css */
 
 
 /* footer css here */
