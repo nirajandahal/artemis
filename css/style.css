@@ -835,6 +835,34 @@ a{
 }
 /* blogs css */
 
+/* listing page css */
+.sidebar {
+	padding: 0 32px 0 0;
+	border-right: 2px solid #c5f1ff;
+	/* background-color: #c5f1ff; */
+}
+
+form.filter-form {
+	/* background-color: #c5f1ff; */
+}
+
+form.filter-form .form-group {
+	margin : 0 0 24px 0;
+}
+
+form.filter-form label{
+	font-size: 16px;
+	margin: 0 0 8px 0;
+	font-weight: 700;
+}
+
+form.filter-form input[type="text"] {
+	background-color: #cbe6ef;
+}
+
+
+/* listing page css  */
+
 /* detail page container css */
 .detail-page-container .destination-title {
 	display: flex;
