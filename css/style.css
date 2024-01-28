@@ -873,6 +873,8 @@ a{
 	margin: 0 0 16px 0;
 }
 
+
+
 .blog-author {
 	display: flex;
 	align-items: center;
@@ -910,6 +912,8 @@ a{
 	margin: 0 8px 0 0;
 }
 
+
+
 .blog-featured-image {
 	height:400px;
 	margin: 24px 0 32px;
@@ -926,6 +930,20 @@ a{
     line-height: 26px;
     color: #333;
     font-weight: 500;
+}
+
+@media only screen and (max-width:575px) {
+	.blog-author-social {
+		flex-direction: column-reverse;
+	}	
+
+	.blog-author {
+		margin: 0 0 16px 0;
+	}
+
+	.blog-featured-image {
+		height: 280px;
+	}
 }
 /* blog detail page css  */
 
