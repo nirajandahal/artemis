@@ -364,7 +364,7 @@ a{
 }
 
 .banner.detail-page-banner img{
-	height:80vh
+	height:80vh;
 }
 
 .banner.detail-page-banner .destination-summary{
@@ -854,6 +854,129 @@ a{
 	}
 }
 /* blogs css */
+
+/* blog detail page css  */
+.blog-content .blog-title{
+	font-weight: 700;
+	font-size: 32px;
+	margin:0;
+}
+
+.blog-content .blog-subtitle{
+	font-size: 16px;
+	font-style: italic;
+}
+
+.blog-author-social{
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 16px 0;
+}
+
+.blog-author {
+	display: flex;
+	align-items: center;
+}
+
+.blog-author img{
+	height:65px;
+	width:65px;
+	border:1px solid #ff9900;
+	border-radius:50%;
+	margin: 0 16px 0 0;
+}
+
+.blog-author h6{
+	font-weight: 600;
+	font-size: 16px;
+	margin:0;
+	line-height: 10px;
+}
+
+.blog-author em{
+	font-size: 12px;
+}
+
+.blog-social a{
+	background-color: #ff9900;
+	height:44px;
+	line-height: 44px;
+	width:40px;
+	text-align: center;
+	font-size: 24px;
+	border-radius: 50%;
+	display: inline-block;
+	color:#fff;
+	margin: 0 8px 0 0;
+}
+
+.blog-featured-image {
+	height:400px;
+	margin: 24px 0 32px;
+}
+
+.blog-featured-image img {
+	height : 100%;
+	width:100%;
+	border-radius:10px;
+}
+
+.blog-content p {
+	font-size: 16px;
+    line-height: 26px;
+    color: #333;
+    font-weight: 500;
+}
+/* blog detail page css  */
+
+/* comment section css  */
+
+.comment-section h3{
+	border-top : 1px solid #ccc;
+	margin: 32px 0 24px;
+	padding: 24px 0 0;
+	font-weight: 600;
+}
+
+.comment-section .author-details {
+	display:flex;
+	margin: 0 0 16px 0;
+}
+.comment-section img{
+	height:60px;
+	width:60px;
+	border:1px solid #ff9900;
+	margin: 0 16px 0 0;
+	border-radius:50%;
+}
+
+.comment-section .author-info {
+	padding: 21px 0 0;
+	margin: 0 0 8px 0;
+}
+
+.comment-section .author-info h6{
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 0px;
+}
+
+.comment-section .author-info em{
+	font-size: 14px;
+}
+
+.comment-section .author-comment {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.comment-reply {
+	background-color: #f5f5f5;
+	padding:16px;
+	border-left:2px solid #999;
+}
+
+/* comment section css  */
 
 /* listing page css */
 .sidebar {
