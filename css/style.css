@@ -146,6 +146,12 @@ a{
 	margin: 0 0 40px 0;
 	padding: 0 0 8px 0;
 }
+
+@media only screen and (max-width:575px) {
+	.at-page-title{
+		font-size: 24px;
+	}
+}
 /* constant css ends */
 
 /* header css starts  */
@@ -1353,6 +1359,36 @@ width:60px !important;
  
  /* ********************************* contact us ************************************* */
  
+
+ /* faq page css */
+.faqs .accordion h2 button{
+	font-weight: 500;
+	font-size: 18px;
+	color:#fcfcfc;
+	background-color: #005d85;
+}
+
+.faqs .accordion h2 button:focus{
+	box-shadow: none;
+}
+
+.faqs .faq-container div{
+	background-color: #fcfcfc;
+	padding: 16px;
+	margin:0 0 8px 0;
+}
+
+.faqs .faq-container h4{
+	font-size: 16px;
+	color:#005d85;
+}
+
+.faqs .faq-container p{
+	font-size: 16px;
+	line-height: 26px;
+	color:#333;
+}
+ /* faq page css */
 
 /* footer css here */
 footer{
