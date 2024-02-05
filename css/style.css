@@ -1,7 +1,9 @@
 body {
 	font-family: 'Montserrat', sans-serif;
 }
-
+html{
+	scroll-behavior: smooth;
+}
 section {
 	padding: 40px 0;
 }
@@ -167,6 +169,16 @@ a{
 
 .important-message {
 	color : #c90000;
+	margin: 0 0 1rem 0;
+}
+
+.image-gallery {
+	margin: 2rem 0 0 0;
+}
+
+.image-gallery img {
+	width:100%;
+	height:auto;
 	margin: 0 0 1rem 0;
 }
 /* constant css ends */
@@ -336,12 +348,12 @@ a{
 	border-radius:50px;
 }
 
-.banner .search-form form{
+.search-form form{
 	display: flex;
 	justify-content: space-between;
 }
 
-.banner .search-form .search-button {
+.search-form .search-button {
 	border: none;
     background-color: #005d85;
     height: 50px;
@@ -410,8 +422,8 @@ a{
 	bottom:0;
 	padding: 2rem;
 	display: inline-block;
-	width:400px;
-	height:400px;
+	width:25rem;
+	height:25rem;
 	border-radius: 10px 10px 0 0;
 }
 
@@ -443,6 +455,14 @@ a{
 
 .banner.detail-page-banner .destination-summary .summary-rate label small {
 	color:#c90000;
+}
+
+.search-form{
+	border-radius:0;
+	box-shadow: none;
+	background-color: none;
+	border-right:none;
+	position: static;
 }
 
 .banner.detail-page-banner .destination-summary .summary-rate div > div {
@@ -1282,11 +1302,11 @@ width:60px !important;
 	margin: 0 0 1rem 0;
 }
 
-.booking-form .add-info .form-group {
+.booking-form .form-group {
 	margin: 0 0 24px 0;
 }
 
-.booking-form .add-info label{
+.booking-form label{
 	font-size: 14px;
 	font-weight: 700;
 }
@@ -1303,6 +1323,22 @@ width:60px !important;
 
 .booking-form .at-cta-btn {
 	padding: 0 3rem;
+}
+
+.dp-booking-form{
+	position:sticky;
+	top: 8rem;
+}
+
+@media only screen and (max-width:575px) {
+	.dp-booking-form {
+		top:12rem;
+		margin: 3rem 0;
+	}
+}
+
+.booking-form .dp-booking-form input{
+	padding: 0.75rem 1rem;
 }
 
 .booking-summary {
