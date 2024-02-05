@@ -52,6 +52,12 @@ a{
 	box-sizing: border-box;
 }
 
+.primary-outline-color:hover {
+	border:none;
+	color:#fff;
+	background-color: #d58000;
+}
+
 .primary-outline-background-color {
 
 }
@@ -76,7 +82,7 @@ a{
 
 .section-heading h1 {
 	font-weight: 700;
-	font-size: 48px;
+	font-size: 3rem;
 	margin:0 0 0 0;
 }
 
@@ -119,8 +125,8 @@ a{
 	}
 
 	section{
-		padding:16px 0 !important;
-		margin:16px 0 !important;
+		padding:1rem 0 !important;
+		margin:1rem 0 !important;
 	}
 
 	.section-heading h1 {
@@ -152,6 +158,17 @@ a{
 		font-size: 24px;
 	}
 }
+
+.tags .badge{
+	background: linear-gradient(to bottom, #ed8e01 26%, #ffbb57 100%);
+	color:#fff;
+	font-weight: 400;
+}
+
+.important-message {
+	color : #c90000;
+	margin: 0 0 1rem 0;
+}
 /* constant css ends */
 
 /* header css starts  */
@@ -163,13 +180,13 @@ a{
 }
 
 .social-links a{
-	font-size: 16px;
+	font-size: 1rem;
 	color:#c5f1ff;
 	margin: 0 4px 0 0;
 }
 
 .logo-header{
-	padding: 16px 0;
+	padding: 1rem 0;
 	background-color: #fcfcfc;
 }
 
@@ -192,7 +209,7 @@ a{
 	color:#333;
 	font-weight: 700;
 	position: relative;
-	font-size: 16px;
+	font-size: 1rem;
 }
 
 
@@ -225,7 +242,7 @@ a{
 }
 .artemis-nav .dropdown-menu li a {
 	font-size: 14px;
-	padding: 8px 16px;
+	padding: 8px 1rem;
 	font-weight: 500;
 	display: block;
 }
@@ -246,7 +263,7 @@ a{
 	}
 
 	.artemis-nav ul li {
-		margin: 16px 8px 16px 0px;
+		margin: 1rem 8px 1rem 0px;
 	}
 
 	.artemis-nav ul li a {
@@ -256,7 +273,7 @@ a{
 
 @media only screen and (max-width:380px) {
 	.artemis-nav ul li {
-		margin: 16px 12px 16px 0px;
+		margin: 1rem 12px 1rem 0px;
 	}
 
 	.artemis-nav ul li a {
@@ -292,7 +309,7 @@ a{
 	top:50%;
 	transform:translate(-50%,-50%);
 	text-align:center;
-	padding:32px;
+	padding:2rem;
 	color:#fff;
 }
 
@@ -347,7 +364,7 @@ a{
 	.dark-bg-layer .banner-text {
 		width: 100%;
 		text-align: left;
-		padding: 16px;
+		padding: 1rem;
 	}
 
 	.dark-bg-layer .banner-text h1 {
@@ -358,7 +375,7 @@ a{
 		width:100%;
 		bottom:-240px;
 		border-radius:40px;
-		padding-bottom:32px;
+		padding-bottom:2rem;
 	}
 
 	.banner.homepage-banner .search-form form {
@@ -374,7 +391,7 @@ a{
 
 /* detail page banner css */
 .banner.detail-page-banner{
-	margin: 0 0 48px 0;
+	margin: 0 0 3rem 0;
 }
 
 .banner.detail-page-banner img{
@@ -391,7 +408,7 @@ a{
 	content:'';
 	left:0;
 	bottom:0;
-	padding: 32px;
+	padding: 2rem;
 	display: inline-block;
 	width:400px;
 	height:400px;
@@ -416,12 +433,12 @@ a{
 .banner.detail-page-banner .destination-summary .summary-rate {
 	display: flex;
 	justify-content: space-between;
-	margin: 0 0 16px 0;
+	margin: 0 0 1rem 0;
 }
 
 .banner.detail-page-banner .destination-summary label {
 	color:#333;
-	font-size: 16px;
+	font-size: 1rem;
 }
 
 .banner.detail-page-banner .destination-summary .summary-rate label small {
@@ -467,7 +484,7 @@ a{
 	width:200px;
 	height:200px;
 	border-radius: 50%;
-	margin-bottom:16px;
+	margin-bottom:1rem;
 }
 
 .circular-card h2{
@@ -526,7 +543,7 @@ a{
 .d-card img{
 	width:360px;
 	height:360px;
-	margin : 0 0 16px 0;
+	margin : 0 0 1rem 0;
 	border-radius: 20px;
 }
 
@@ -534,7 +551,7 @@ a{
 	
 	.destination-card-1{
 		width:320px;
-		margin: 0 0 16px 0;
+		margin: 0 0 1rem 0;
 	}
 	
 	.destination-card-1 img{
@@ -552,7 +569,7 @@ a{
 }
 
 .destination-card-2 h2{
-	font-size: 32px;
+	font-size: 2rem;
 	font-weight: 700;
 	margin: 0 0 12px 0;
 }
@@ -560,7 +577,7 @@ a{
 .destination-card-2 img{
 	width: 504px;
 	height:520px;
-	margin: 0 0 16px 0;
+	margin: 0 0 1rem 0;
 	border-radius: 20px;
 }
 
@@ -568,7 +585,7 @@ a{
 	.destination-card-2 {
 		width: 100%;
 		padding: 8px;
-		margin: 0 0 16px 0;
+		margin: 0 0 1rem 0;
 	}
 	
 	.destination-card-2 img{
@@ -583,7 +600,7 @@ a{
 /* destination-card-3 css */
 .destination-card-3 {
 	display: flex;
-	margin: 0 0 32px 0;
+	margin: 0 0 2rem 0;
 }
 
 .destination-card-3 img{
@@ -604,7 +621,7 @@ a{
 	}
 
 	.destination-card-3 img{
-		margin: 0 0 16px 0;
+		margin: 0 0 1rem 0;
 	}
 }
 
@@ -612,7 +629,7 @@ a{
 
 /* destination-card-4 css */
 .destination-card-4 {
-	margin: 0 0 32px 0;
+	margin: 0 0 2rem 0;
 	box-shadow: 0px 0px 4px #ccc;
 	border-radius: 10px;
 }
@@ -625,23 +642,47 @@ a{
 	width:100%;
     height: 280px;
     border-radius: 10px;
+	margin-bottom : 0;
 }
 
 .destination-card-4 .txt-section {
-	padding: 16px;
+	padding: 1rem;
 }
 /* destination-card-4 css */
 
 /* destination-card-5 css */
 .destination-card-5 {
-	padding:0 0 16px 0;
-	margin: 0 0 32px 0;
+	padding:0 0 1rem 0;
+	margin: 0 0 2rem 0;
 }
 .destination-card-5 img{
 	width:100%;
 }
 /* destination-card-5 css */
 
+/* .destination-card-6 css */
+.destination-card-6 {
+	margin: 0 0 2rem 0;
+	box-shadow: 0px 0px 4px #ccc;
+	border-radius: 10px;
+	align-items: center;
+}
+
+.destination-card-6 .img-section {
+	padding:0;
+}
+
+.destination-card-6 .txt-section {
+	padding: 1.5rem;
+}
+
+.destination-card-6 img{
+	width:100%;
+	height:440px;
+	margin: 0;
+}
+/* .destination-card-6 css */
+ 
 /* cards css */
 
 /* trek highlights section css */
@@ -653,7 +694,7 @@ a{
 
 .is-highlights .highlight-images{
 	border-right: 2px solid #f5f5f5;
-	padding:0 16px 0 0;
+	padding:0 1rem 0 0;
 	height:560px;
 }
 
@@ -800,8 +841,8 @@ a{
 	}
 	.testimonials-section .circular-card{
 		width:240px;
-		padding:24px 16px ;
-		margin: 0 16px 0 0;
+		padding:24px 1rem ;
+		margin: 0 1rem 0 0;
 		background-color: #c5f1ff;
 	}
 
@@ -825,13 +866,13 @@ a{
   }
 
 .blog-card {
-	margin: 0 0 32px 0;
+	margin: 0 0 2rem 0;
 }
 
 .blog-card img{
 	width:100%;
 	height: 320px;
-	margin: 0 0 16px 0;
+	margin: 0 0 1rem 0;
 	border-radius : 10px;
 }
 
@@ -841,11 +882,7 @@ a{
 	margin: 0 0 8px 0;
 }
 
-.blog-card .blog-extra-info .tags .badge{
-	background: linear-gradient(to bottom, #ed8e01 26%, #ffbb57 100%);
-	color:#fff;
-	font-weight: 400;
-}
+
 
 .blog-card .comment-link a{
 	font-weight: 500;
@@ -853,13 +890,13 @@ a{
 
 .read-more-text a{
 	font-weight: 700;
-	font-size:16px;
+	font-size:1rem;
 }
 
 .blog-card h2{
 	font-weight: 700;
 	font-size: 24px;
-	margin: 16px 0 12px;
+	margin: 1rem 0 12px;
 }
 
 @media only screen and (max-width:575px) {
@@ -872,19 +909,19 @@ a{
 /* blog detail page css  */
 .blog-content .blog-title{
 	font-weight: 700;
-	font-size: 32px;
+	font-size: 2rem;
 	margin:0;
 }
 
 .blog-content .blog-subtitle{
-	font-size: 16px;
+	font-size: 1rem;
 	font-style: italic;
 }
 
 .blog-author-social{
 	display: flex;
 	justify-content: space-between;
-	margin: 0 0 16px 0;
+	margin: 0 0 1rem 0;
 }
 
 
@@ -899,12 +936,12 @@ a{
 	width:65px;
 	border:1px solid #ff9900;
 	border-radius:50%;
-	margin: 0 16px 0 0;
+	margin: 0 1rem 0 0;
 }
 
 .blog-author h6{
 	font-weight: 600;
-	font-size: 16px;
+	font-size: 1rem;
 	margin:0;
 	line-height: 10px;
 }
@@ -930,7 +967,7 @@ a{
 
 .blog-featured-image {
 	height:400px;
-	margin: 24px 0 32px;
+	margin: 24px 0 2rem;
 }
 
 .blog-featured-image img {
@@ -940,7 +977,7 @@ a{
 }
 
 .blog-content p {
-	font-size: 16px;
+	font-size: 1rem;
     line-height: 26px;
     color: #333;
     font-weight: 500;
@@ -952,7 +989,7 @@ a{
 	}	
 
 	.blog-author {
-		margin: 0 0 16px 0;
+		margin: 0 0 1rem 0;
 	}
 
 	.blog-featured-image {
@@ -985,7 +1022,7 @@ a{
 }
 
 .blog-sidebar ul li h2 {
-	font-size: 16px;
+	font-size: 1rem;
 	line-height: 26px;
 }
 
@@ -1003,20 +1040,20 @@ a{
 
 .comment-section h3{
 	border-top : 1px solid #ccc;
-	margin: 32px 0 24px;
+	margin: 2rem 0 24px;
 	padding: 24px 0 0;
 	font-weight: 600;
 }
 
 .comment-section .author-details {
 	display:flex;
-	margin: 0 0 16px 0;
+	margin: 0 0 1rem 0;
 }
 .comment-section img{
 	height:60px;
 	width:60px;
 	border:1px solid #ff9900;
-	margin: 0 16px 0 0;
+	margin: 0 1rem 0 0;
 	border-radius:50%;
 }
 
@@ -1027,7 +1064,7 @@ a{
 
 .comment-section .author-info h6{
 	font-weight: 600;
-	font-size: 16px;
+	font-size: 1rem;
 	line-height: 0px;
 }
 
@@ -1042,7 +1079,7 @@ a{
 
 .comment-reply {
 	background-color: #f5f5f5;
-	padding:16px;
+	padding:1rem;
 	border-left:2px solid #999;
 }
 
@@ -1059,10 +1096,18 @@ a{
 
 /* listing page css */
 .sidebar {
-	padding: 0 32px 0 0;
+	padding: 0 2rem 0 0;
 	border-right: 2px solid #c5f1ff;
 	/* background-color: #c5f1ff; */
 }
+
+.sidebar.right-sidebar{
+	border-right:none;
+	border-left: 2px solid #c5f1ff;
+	padding: 0 0 0 2rem;
+}
+
+
 
 form.filter-form {
 	/* background-color: #c5f1ff; */
@@ -1073,7 +1118,7 @@ form.filter-form .form-group {
 }
 
 form.filter-form h6{
-	font-size: 16px;
+	font-size: 1rem;
 	margin: 0 0 8px 0;
 	font-weight: 700;
 }
@@ -1109,7 +1154,7 @@ form.filter-form label{
 	display: flex;
 	justify-content: space-between;
 	border-bottom : 2px solid #ed8e01;
-	margin: 0 0 32px 0;
+	margin: 0 0 2rem 0;
 }
 
 .destination-title h1{
@@ -1119,7 +1164,7 @@ form.filter-form label{
 @media only screen and (max-width:575px) { 
 	.destination-title {
 		display: block;
-		padding: 0 0 16px 0;
+		padding: 0 0 1rem 0;
 	}
 
 	.destination-title h1 {
@@ -1128,14 +1173,14 @@ form.filter-form label{
 }
 
 .detail-page-container p, .detail-page-container .content-good-to-know-section ul  li {
-	font-size: 16px;
+	font-size: 1rem;
 	line-height: 26px;
 	color: #333;
 	font-weight: 500;
 }
 
 .detail-page-content-section {
-	margin: 0 0 32px 0;
+	margin: 0 0 2rem 0;
 }
 
 .content-includes-excludes ul{
@@ -1145,8 +1190,8 @@ form.filter-form label{
 }
 
 .content-includes-excludes ul li {
-	font-size: 16px;
-	line-height: 32px;;
+	font-size: 1rem;
+	line-height: 2rem;;
 	color:#333;
 	font-weight: 500;
 }
@@ -1189,7 +1234,7 @@ width:60px !important;
 
 .booking-form{
 	background-color: #d9f6ff;
-	padding:16px;
+	padding:1rem;
 }
 
 .booking-form h4{
@@ -1234,7 +1279,7 @@ width:60px !important;
 }
 
 .booking-form .add-info h4{
-	margin: 0 0 16px 0;
+	margin: 0 0 1rem 0;
 }
 
 .booking-form .add-info .form-group {
@@ -1248,8 +1293,8 @@ width:60px !important;
 
 .booking-form .add-info input{
 	border:1px solid #005d85;
-	height: 48px;
-	line-height: 48px;
+	height: 3rem;
+	line-height: 3rem;
 }
 
 .booking-form textarea {
@@ -1263,7 +1308,7 @@ width:60px !important;
 .booking-summary {
 	box-shadow: 0px 0px 6px #ccc;
 	border-radius: 8px;
-	padding:16px;
+	padding:1rem;
 	position:sticky;
 	top:20%;
 }
@@ -1280,7 +1325,7 @@ width:60px !important;
 }
 
 .booking-summary p{
-	font-size: 16px;
+	font-size: 1rem;
 	font-weight: 700;
 	color:#005d85;
 	margin: 0 0 8px 0;
@@ -1304,14 +1349,14 @@ width:60px !important;
 
 .cost-breakdown .final-payable-amount{
 	font-weight: 700;
-	font-size: 32px;
+	font-size: 2rem;
 	color:#338500;
 }
 
 @media only screen and (max-width:575px){
 	.booking-form{
 		padding:8px;
-		margin: 0 0 16px 0;
+		margin: 0 0 1rem 0;
 	}
 	.booking-summary {
 		position:static;
@@ -1384,17 +1429,17 @@ width:60px !important;
 
 .faqs .faq-container div{
 	background-color: #fcfcfc;
-	padding: 16px;
+	padding: 1rem;
 	margin:0 0 8px 0;
 }
 
 .faqs .faq-container h4{
-	font-size: 16px;
+	font-size: 1rem;
 	color:#005d85;
 }
 
 .faqs .faq-container p{
-	font-size: 16px;
+	font-size: 1rem;
 	line-height: 26px;
 	color:#333;
 }
@@ -1442,7 +1487,7 @@ footer{
 }
 
 .subscription-box form input {
-	padding: 8px 16px;
+	padding: 8px 1rem;
 	border-radius:5px;
 	border:none;
 	box-shadow: none;
@@ -1456,7 +1501,7 @@ footer{
 }
 
 .footer-contents{
-	margin: 48px 0 0;
+	margin: 3rem 0 0;
 	color: #d9f6ff;
 }
 
