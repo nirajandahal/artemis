@@ -1331,9 +1331,13 @@ width:60px !important;
 }
 
 @media only screen and (max-width:575px) {
-	.dp-booking-form {
-		top:12rem;
+	.dp-booking-form{
+		top: 12rem;
 		margin: 3rem 0;
+	}
+
+	.dp-booking-form .booking-form {
+		padding: 2rem 1rem;
 	}
 }
 
