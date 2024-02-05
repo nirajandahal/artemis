@@ -158,6 +158,12 @@
                                         <input type="text" placeholder="Full Name" class="form-control">
                                     </div>
                                 </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label>Country</label>
+                                        <input type="text" placeholder="Country" class="form-control">
+                                    </div>
+                                </div>
                                 <div class="col-6">
                                     <div class="form-group">
                                         <label>Email</label>
@@ -172,10 +178,11 @@
                                 </div>
                                 <div class="col-6">
                                     <div class="form-group">
-                                        <label>Country</label>
-                                        <input type="text" placeholder="Country" class="form-control">
+                                        <label>Emergency Contact Number</label>
+                                        <input type="text" placeholder="Phone" class="form-control">
                                     </div>
                                 </div>
+                                
                                 <div class="col-6">
                                     <div class="form-group">
                                         <label>State</label>
@@ -194,10 +201,22 @@
                                         <input type="file" placeholder="Search" class="form-control">
                                     </div>
                                 </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label>Additional Requirements / Information</label>
+                                        <textarea type="text" placeholder="Please let us know if there is any additional requirements, or any additional information." class="form-control textarea"></textarea>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="row add-info">
                                 <h4>Payment Information</h4>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label>Minimum amount that needs to be paid (in $)</label><br/> <span class="text-muted">P.S. You can also choose to enter full payment as advance payment.</span>
+                                        <input type="text" value="680" placeholder="1000" class="form-control">
+                                    </div>
+                                </div>
                                 <div class="col-12">
                                     <div class="form-group">
                                         <label>Card</label>
@@ -219,6 +238,9 @@
                             </div>
 
                             <div class="row">
+                                <div class="col-12">
+                                    <p>By clicking checkout, I agree to all <a href="standalone-page.html">Terms and Conditions.</a></p>
+                                </div>
                                 <div class="col-12 text-end">
                                     <a href="" class="at-cta-btn">Checkout</a>
                                 </div>
@@ -259,9 +281,18 @@
                                 <label>Additional Services</label><p>$300</p>
                             </div>
                         </div>
-                        <div class="final-payment">
+                        <div class="final-payment border-top">
                             <h5>Final Payment</h5>
                             <p class="final-payment-number">$1680</p>
+                        </div>
+                        <div class="cost-breakdown">
+                            <h4>Payment Breakdown</h4>
+                            <div>
+                                <label>Advance Payment during booking</label><p>$680</p>
+                            </div>
+                            <div>
+                                <label><strong>Remaining Payment</strong><br/><small>Payable upon arrival.</small></label><p class="final-payable-amount">$1000</p>
+                            </div>
                         </div>
                     </div>
                 </div>

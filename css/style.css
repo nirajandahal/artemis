@@ -1246,10 +1246,14 @@ width:60px !important;
 	font-weight: 700;
 }
 
-.booking-form .add-info input {
+.booking-form .add-info input{
 	border:1px solid #005d85;
 	height: 48px;
 	line-height: 48px;
+}
+
+.booking-form textarea {
+	border:1px solid #005d85;
 }
 
 .booking-form .at-cta-btn {
@@ -1293,8 +1297,14 @@ width:60px !important;
 }
 
 .booking-summary .final-payment p{
-	font-size: 40px;
+	font-size: 24px;
 	font-weight: 700;
+	color:#338500;
+}
+
+.cost-breakdown .final-payable-amount{
+	font-weight: 700;
+	font-size: 32px;
 	color:#338500;
 }
 
@@ -1389,6 +1399,28 @@ width:60px !important;
 	color:#333;
 }
  /* faq page css */
+
+ /* about page css */
+ .about-service-images {
+	display: flex;
+	align-items: center;
+	margin: 0 0 40px 0;
+ }
+ .about-service-images img {
+	width:100%;
+	border-radius: 5%;
+ }
+ .about-service-images h3{
+	font-size: 24px;
+	font-weight: 700;
+ }
+ .about-service-images p {
+	font-size: 14px;
+	line-height:26px;
+	font-size: 600;
+	color:#999
+ }
+ /* about page css  */
 
 /* footer css here */
 footer{
