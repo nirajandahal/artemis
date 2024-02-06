@@ -189,16 +189,35 @@ a{
 		min-height: 80vh;
 	}
 
-	.login-signup-form .login-form{
-		width: 550px;
-		margin: auto;
-		padding: 2rem;
-		background-color: #f5f5f5;
-		box-shadow: 0px 2px 4px #ced4da;
+	.login-signup-form .login-page-content h2{
+		font-size: 3rem;
+		font-weight: 700;
 	}
 
-	.login-signup-form h2 {
-		font-size: 2.5rem;
+	.login-signup-form .login-page-content p{
+		color:#333;
+		font-size: 1rem;
+		line-height: 26px;
+	}
+
+	.login-signup-form .login-page-content p a{
+		font-weight: 600;
+	}
+
+	.login-signup-form .login-page-content p a:hover{
+		color:#4267B2;
+	}
+
+	.login-signup-form .ls-form{
+		width: 100%;
+    	padding: 4rem;
+    	background-color: #ffffff;
+    	box-shadow: 0px 2px 4px #ccc;
+    	border-radius: 10%;
+	}
+
+	.login-signup-form h3 {
+		font-size: 1.5rem;
 		font-weight: 700;
 		margin: 0 0 3rem 0;
 		padding: 0 0 0.5rem 0;
@@ -209,7 +228,7 @@ a{
 		margin: 0 0 1rem 0;
 	}
 
-	.login-signup-form p{
+	.login-signup-form .login-form p{
 		font-size: 0.8rem;
 	}
 
@@ -238,6 +257,18 @@ a{
 
 	.social-login .fa-instagram{
 		color: #C13584;
+	}
+
+	@media only screen and (max-width:575px) {
+		.login-signup-form .login-page-content h2{
+			font-size: 2rem;
+		}
+
+		.login-signup-form .ls-form{
+			padding:1.5rem;
+			border-radius:5px;
+			border-top:2px solid #005d85;
+		}
 	}
 /* login signup page css */
 
