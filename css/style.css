@@ -477,6 +477,10 @@ a{
 	justify-content: space-between;
 }
 
+.search-form .search-form-padding {
+	padding: 0 2rem 0 0;
+}
+
 .search-form .search-button {
 	border: none;
     background-color: #005d85;
@@ -486,14 +490,106 @@ a{
     color: #fff;
 }
 
+.search-form .search-button span{
+	display: none;
+}
+
 .banner.homepage-banner .search-form .form-control:focus{
 	box-shadow: 0;
+}
+
+@media only screen and (max-width: 1280px) {
+	.banner.homepage-banner {
+		height: 75vh;
+	}
+
+	.banner .search-form {
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 1120px) {
+	.banner .search-form {
+		width: 90%;
+		padding: 20px;
+	}
+
+	.search-form .search-form-padding {
+		padding: 0 1rem 0 0;
+	}
+}
+
+
+@media only screen and (max-width: 920px) {
+
+	.dark-bg-layer .banner-text {
+		width: 80%;
+	}
+
+	.dark-bg-layer .banner-text h1 {
+		font-size: 2.5rem;
+	}
+	
+	
+	.banner .search-form {
+		width: 100%;
+		padding: 16px;
+		border-radius: 25px;
+	}
+
+	.search-form .search-form-padding {
+		padding: 0 1rem 0 0;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+
+	.banner.homepage-banner {
+		height: 65vh;
+		margin-bottom : 240px;
+	}
+	
+	.banner.homepage-banner .search-form{
+		width:100%;
+		bottom:-240px;
+		border-radius:40px;
+	}
+
+	.banner.homepage-banner .search-form form {
+		display: block;
+	}
+
+	.banner.homepage-banner .search-form form div {
+		margin: 8px 0;
+	}
+
+	.banner.homepage-banner .search-form .search-button {
+    	height: 50px;
+    	width: 100%;
+    	border-radius: 25px;
+	}
+
+	.search-form .search-button span{
+		display: inline-block;
+		margin: 0 0 0 0.3rem;
+	}
+}
+
+@media only screen and (max-width : 620px) {
+	.banner.homepage-banner {
+		height:75vh;
+		margin-bottom : 280px;
+	}
+
+	.dark-bg-layer .banner-text h1 {
+		font-size: 1.5rem;
+	}
 }
 
 @media only screen and (max-width : 575px) {
 
 	.banner.homepage-banner {
-		height:64vh;
+		height:70vh;
 		margin-bottom : 280px;
 	}
 
@@ -504,18 +600,7 @@ a{
 	}
 
 	.dark-bg-layer .banner-text h1 {
-		font-size: 2.5rem;
-	}
-
-	.banner.homepage-banner .search-form{
-		width:100%;
-		bottom:-240px;
-		border-radius:40px;
-		padding-bottom:2rem;
-	}
-
-	.banner.homepage-banner .search-form form {
-		display: block;
+		font-size: 2rem;
 	}
 
 	.banner.homepage-banner .search-form .search-button {
