@@ -82,7 +82,7 @@ a{
 	margin: 0 0 64px 0;
 }
 
-.section-heading h1 {
+.section-heading h2 {
 	font-weight: 700;
 	font-size: 3rem;
 	margin:0 0 0 0;
@@ -119,6 +119,10 @@ a{
 	border-color:#d58000;
 }
 
+.wrapper-right{
+	justify-content: flex-end;
+}
+
 
 @media only screen and (max-width:575px) {
 
@@ -131,7 +135,7 @@ a{
 		margin:1rem 0 !important;
 	}
 
-	.section-heading h1 {
+	.section-heading h2 {
 		font-size: 28px;
 	}
 
@@ -295,18 +299,18 @@ a{
 	justify-content: flex-end;
 }
 
-.artemis-nav ul {
+.artemis-nav {
 	display: flex;
 	align-items:center;
 	margin:0;
 	padding:0;
 }
 
-.artemis-nav ul li {
+.artemis-nav .nav-item {
 	margin: 0 0 0 24px;
 }
 
-.artemis-nav ul li a {
+.artemis-nav .nav-item a {
 	color:#333;
 	font-weight: 700;
 	position: relative;
@@ -315,11 +319,11 @@ a{
 
 
 
-.artemis-nav ul li a:hover, .artemis-nav ul li a.active{
+.artemis-nav .nav-item a:hover, .artemis-nav .nav-item a.active{
 	color:#005d85;
 }
 
-.artemis-nav ul li a::after, .artemis-nav ul li a.active::after {
+.artemis-nav .nav-item a::after, .artemis-nav .nav-item a.active::after {
 	position: absolute;
 	content: '';
 	bottom:-8px;
@@ -330,25 +334,25 @@ a{
 	transition:0.3s;
 }
 
-.artemis-nav ul li a:hover::after, .artemis-nav ul li a.active::after{
+.artemis-nav .nav-item a:hover::after, .artemis-nav .nav-item a.active::after{
 	position: absolute;
 	width:40%;
 	transition: 0.3s;
 }
 
-.artemis-nav .dropdown-menu li {
+.artemis-nav .dropdown-menu .nav-item {
 	margin:0;
 	padding:0;
 	width:200px;
 }
-.artemis-nav .dropdown-menu li a {
+.artemis-nav .dropdown-menu .nav-item a {
 	font-size: 14px;
 	padding: 8px 1rem;
 	font-weight: 500;
 	display: block;
 }
 
-.artemis-nav .dropdown-menu li a:hover{
+.artemis-nav .dropdown-menu .nav-item a:hover{
 	background-color: #d9f6ff;
 }
 
@@ -363,21 +367,24 @@ a{
 		border-bottom: 1px solid #ccc
 	}
 
-	.artemis-nav ul li {
-		margin: 1rem 8px 1rem 0px;
+	.artemis-nav .nav-item {
+		margin: 1rem 0.8rem 1rem 0rem;
 	}
 
-	.artemis-nav ul li a {
+	.artemis-nav .nav-item a {
 		font-size: 14px;
 	}
+
+	.wrapper-right{
+		justify-content: space-between}
 }
 
 @media only screen and (max-width:380px) {
-	.artemis-nav ul li {
+	.artemis-nav .nav-item {
 		margin: 1rem 12px 1rem 0px;
 	}
 
-	.artemis-nav ul li a {
+	.artemis-nav .nav-item a {
 		font-size: 12px;
 	}
 }
@@ -1627,6 +1634,10 @@ footer{
 .subscription-box form input:focus{
 	border:none;
 	box-shadow:none;
+}
+
+.footer-about-content{
+	margin: 0 0 1rem 0;
 }
 
 .footer-contents{
