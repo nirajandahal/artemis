@@ -263,6 +263,19 @@ a{
 		color: #C13584;
 	}
 
+	@media only screen and (max-width: 1200px) {
+		.login-signup-form .ls-form{
+			padding: 2rem;
+		}
+	}
+
+
+	@media only screen and (max-width: 768px) {
+		.login-signup-form .login-page-content h2 {
+			font-size: 2.5rem;
+		}
+	}
+
 	@media only screen and (max-width:575px) {
 		.login-signup-form .login-page-content h2{
 			font-size: 2rem;
@@ -356,27 +369,42 @@ a{
 	background-color: #d9f6ff;
 }
 
+@media only screen and (max-width:768px) {
+	.logo img{
+		width:100%;
+	}
+
+	.artemis-nav .nav-item {
+		margin: 0 0 0 18px;
+	}
+	
+	.artemis-nav .nav-item a {
+		font-size: 0.8rem;
+	}
+}
+
 @media only screen and (max-width:575px) {
 
 	.logo-header {
 		padding: 8px 8px 0;
 	}
 
+	.logo img{
+		width:auto;
+	}
+
 	.artemis-nav {
 		justify-content: space-between;
-		border-bottom: 1px solid #ccc
+		border-bottom: 1px solid #ccc;
 	}
 
 	.artemis-nav .nav-item {
 		margin: 1rem 0.8rem 1rem 0rem;
 	}
-
-	.artemis-nav .nav-item a {
-		font-size: 14px;
-	}
-
+	
 	.wrapper-right{
-		justify-content: space-between}
+		justify-content: space-between;
+	}
 }
 
 @media only screen and (max-width:380px) {
@@ -385,7 +413,7 @@ a{
 	}
 
 	.artemis-nav .nav-item a {
-		font-size: 12px;
+		font-size: 0.7rem;
 	}
 }
 
