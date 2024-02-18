@@ -751,6 +751,25 @@ a{
 	.banner.detail-page-banner .carousel-indicators {
 		display: none;
 	}
+	
+}
+
+@media only screen and (max-width:330px) {
+	.banner.detail-page-banner .destination-summary label {
+		font-size: 0.8rem;
+	}
+
+	.banner.detail-page-banner .destination-summary .summary-rate div > div {
+		font-size: 1.5rem;
+	}
+
+	.banner.detail-page-banner .destination-summary p{
+		font-size: 0.8rem;
+	}
+
+	.banner.detail-page-banner .destination-summary-box {
+		height: 400px;
+	}
 }
 
 /* detail page banner css */
@@ -1472,11 +1491,11 @@ a{
 
 @media only screen and (max-width:575px) {
 	.blog-blocks>div:nth-child(1) .blog-card img, .blog-blocks>div:nth-child(2) .blog-card img{
-		height: 18rem;
+		height: 14rem;
 	} 
 
 	.blog-card img{
-		height: 18rem;
+		height: 14rem;
 	}
 }
 
@@ -1561,6 +1580,14 @@ a{
 }
 
 @media only screen and (max-width:575px) {
+	.blog-content .blog-title{
+		font-size: 1.6rem;
+	}
+	
+	.blog-content .blog-subtitle{
+		font-size: 0.8rem;
+	}
+	
 	.blog-author-social {
 		flex-direction: column-reverse;
 	}	
@@ -1570,9 +1597,17 @@ a{
 	}
 
 	.blog-featured-image {
-		height: 280px;
+		height: 14rem;
 	}
+
+	.blog-content p {
+		font-size: 0.9rem;
+		line-height: 1.4rem;
+		color: #555;
+	}
+
 }
+
 
 .blog-sidebar {
 	/* background-color: #f5f5f5; */
@@ -1668,6 +1703,44 @@ a{
 .comment-section textarea{
 	border: 1px solid #005d85;
 }	
+
+.comment-section .at-cta-btn{
+	margin: 0.2rem 0 0;
+	padding: 0 0.6rem;
+	font-size: 0.8rem;
+}
+
+@media only screen and (max-width:360px) {
+	.comment-section img {
+		height: 35px;
+		width: 35px;
+		margin: 0 0.4rem 0 0;
+	}
+
+	.comment-section .author-info {
+		padding:8px 0 0;
+		margin: 0 0 8px 0;
+	}
+
+	.comment-section .author-info em {
+		font-size: 0.7rem;
+	}
+
+	.comment-section .author-comment {
+		font-size: 14px;
+		font-weight: 400;
+		width:98%;
+	}
+
+	.comment-section .comment-reply{
+		padding:0.5rem;
+	}
+
+	.comment-section .author-comment .author-details p{
+		font-size: 0.7rem;
+	}
+}
+
 
 /* comment section css  */
 
@@ -1795,6 +1868,13 @@ h4 {
 
 .content-good-to-know-section ul  li {
 	margin: 0 0 8px 0;
+}
+
+@media only screen and (max-width:575px) {
+	.detail-page-container p{
+		font-size: 0.9rem;
+		line-height: 1.4rem;
+		color:#555;
 }
 
 /* detail page container css */
@@ -2048,7 +2128,7 @@ width:60px !important;
 	align-items: center;
 	margin: 0 0 40px 0;
  }
- .about-service-images img {
+ .about-page-section img {
 	width:100%;
 	border-radius: 5%;
  }
