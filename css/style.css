@@ -1798,6 +1798,44 @@ form.filter-form label{
 	font-weight: 500;
 }
 
+.inline-filter-form{
+	display: flex;
+	justify-content: space-between;
+}
+
+.inline-filter-form .form-group{
+	width: 24%;
+}
+
+@media only screen and (max-width:767px) {
+	.inline-filter-form{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	
+	.inline-filter-form .form-group{
+		width: 48%;
+		margin: 0 0 0.8rem;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.listing-page .col-md-4{
+		display: none;
+	}
+
+	.listing-page .col-md-8{
+		width:80%;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.listing-page .col-md-8{
+		width:100%;
+	}
+}
+
 
 /* listing page css  */
 
