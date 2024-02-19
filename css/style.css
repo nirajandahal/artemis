@@ -105,6 +105,7 @@ a{
 	left:0;
 	height:100%;
 	width:100%;
+	z-index:1;
 }
 
 .pagination a{
@@ -793,6 +794,12 @@ a{
 	height:200px;
 	border-radius: 50%;
 	margin-bottom:1rem;
+	transition: 0.3s;
+}
+
+.circular-card:hover img {
+	transform: rotate(5deg);
+	transition: 0.3s;
 }
 
 .circular-card h2{
@@ -817,6 +824,24 @@ a{
 
 /* circular-card css */
 /* destination-card-global d-card */
+.d-card, .blog-card {
+	position: relative;
+	transition: 0.4s ease;
+}
+
+.d-card:hover img, .blog-card:hover img{
+	transition: 0.3s ease;
+	transform: scale(1.03);
+	overflow:hidden;
+	background-color: #ed8e01;
+	color:#d9f6ff;
+	border:#ed8e01;
+}
+
+.d-card:hover h2, .blog-card:hover h2{
+	color:#005d85;
+}
+
 .d-card h2 {
 	font-size:24px;
 	font-weight: 700;
@@ -854,6 +879,7 @@ a{
 	height:360px;
 	margin : 0 0 1rem 0;
 	border-radius: 20px;
+	transition: 0.3s;
 }
 
 @media only screen and (max-width:575px) {
@@ -1801,24 +1827,15 @@ form.filter-form label{
 .inline-filter-form{
 	display: flex;
 	justify-content: space-between;
+	margin: 0 0 1rem 0;
+	display: none;
 }
 
 .inline-filter-form .form-group{
 	width: 24%;
 }
 
-@media only screen and (max-width:767px) {
-	.inline-filter-form{
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-	}
-	
-	.inline-filter-form .form-group{
-		width: 48%;
-		margin: 0 0 0.8rem;
-	}
-}
+
 
 @media only screen and (max-width: 1200px) {
 	.listing-page .col-md-4{
@@ -1828,11 +1845,26 @@ form.filter-form label{
 	.listing-page .col-md-8{
 		width:80%;
 	}
+
+	.inline-filter-form {
+		display:flex;
+	}
 }
 
 @media only screen and (max-width: 1000px) {
 	.listing-page .col-md-8{
 		width:100%;
+	}
+}
+
+@media only screen and (max-width:767px) {
+	.inline-filter-form{
+		flex-wrap: wrap;
+	}
+	
+	.inline-filter-form .form-group{
+		width: 48%;
+		margin: 0 0 0.8rem;
 	}
 }
 
