@@ -198,7 +198,7 @@ a{
 	margin: 0 0 1rem 0;
 }
 
-.destination-card-1 .at-cta-btn, .destination-card-2 .at-cta-btn, .destination-card-3 .at-cta-btn {
+.destination-card-1 .at-cta-btn, .destination-card-2 .at-cta-btn, .destination-card-3 .at-cta-btn, .destination-card-5 .at-cta-btn {
 	margin:0 1rem 0 0;
 	z-index: 5;
 }
@@ -2089,7 +2089,28 @@ width:60px !important;
  
  .contact-us .contact-form-heading{
 	font-weight: 600;
-	font-size: 40px;
+	font-size: 2.5rem;
+ }
+
+ @media only screen and (max-width:840px) {
+	.contact-us label{
+		font-size: 13px;
+	}
+
+	.contact-us .contact-form-heading{
+		font-size: 2rem;
+	 }
+ }
+
+ @media only screen and (max-width:840px) {
+
+	.contact-us .contact-form-heading{
+		font-size: 1.6rem;
+	 }
+
+	 .contact-us p{
+		font-size: 0.8rem;
+	 }
  }
  
  /* ********************************* contact us ************************************* */
