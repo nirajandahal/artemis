@@ -30,6 +30,8 @@ section {
     background-color: #d58000;
 }
 
+
+
 .a t-links {
     
 }
@@ -140,7 +142,7 @@ a{
 
 	section{
 		padding:1rem 0 !important;
-		margin:1rem 0 !important;
+		margin:0rem 0 !important;
 	}
 
 	.section-heading h2 {
@@ -1742,6 +1744,7 @@ a{
 }
 
 
+
 /* comment section css  */
 
 /* listing page css */
@@ -1756,7 +1759,6 @@ a{
 	border-left: 2px solid #c5f1ff;
 	padding: 0 0 0 2rem;
 }
-
 
 
 form.filter-form {
@@ -1875,6 +1877,7 @@ h4 {
 		font-size: 0.9rem;
 		line-height: 1.4rem;
 		color:#555;
+	}
 }
 
 /* detail page container css */
@@ -2123,24 +2126,35 @@ width:60px !important;
  /* faq page css */
 
  /* about page css */
+ .about-main-section {
+	margin: 0 0 3rem 0;
+ }
+ .about-service-images img {
+	width:80%;
+	border-radius: 5%;
+ }
+
  .about-service-images {
 	display: flex;
 	align-items: center;
 	margin: 0 0 40px 0;
  }
- .about-page-section img {
-	width:100%;
-	border-radius: 5%;
- }
+
  .about-service-images h3{
 	font-size: 24px;
 	font-weight: 700;
  }
  .about-service-images p {
-	font-size: 14px;
+	font-size: 16px;
 	line-height:26px;
 	font-size: 600;
-	color:#999
+ }
+
+ @media only screen and (max-width:575px) {
+	.about-service-images img {
+		width:90%;
+		margin: 0 0 2rem 0;
+	 }
  }
  /* about page css  */
 
