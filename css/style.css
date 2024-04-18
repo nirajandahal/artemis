@@ -1062,7 +1062,7 @@ a{
 
 @media only screen and (max-width: 420px) {
 	
-	.destination-card-3 img{
+	.destination-card-3 .card-image{
 		height:14rem;
 	}
 }
