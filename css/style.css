@@ -437,7 +437,7 @@ a{
 	}
 
 	.artemis-nav .nav-item {
-		margin: 0 0 0 18px;
+		margin: 0;
 	}
 	
 	.artemis-nav .nav-item a {
@@ -461,7 +461,12 @@ a{
 	}
 
 	.artemis-nav .nav-item {
-		margin: 1rem 0.8rem 1rem 0rem;
+		margin: 1rem 0rem 1rem 0rem;
+		padding: 4px;
+	}
+
+	.artemis-nav .nav-item a {
+		font-size: 0.9rem;
 	}
 	
 	.wrapper-right{
@@ -470,19 +475,13 @@ a{
 }
 
 @media only screen and (max-width:380px) {
-	.artemis-nav .nav-item {
-		margin: 1rem 12px 1rem 0px;
-	}
-
+	
 	.artemis-nav .nav-item a {
 		font-size: 0.7rem;
 	}
 }
 
 @media only screen and (max-width:320px) {
-	.artemis-nav .nav-item {
-		margin: 1rem 5px 1rem 0px;
-	}
 
 	.artemis-nav .nav-item a {
 		font-size: 0.6rem;
@@ -1446,6 +1445,10 @@ a{
 }
 
 @media only screen and (max-width:575px) {
+	.testimonials-section .section-heading {
+		margin-bottom: 1rem;
+	}
+
 	.testimonials-section .testimonials-list {
 		max-width:100%;
 	}
@@ -1453,12 +1456,11 @@ a{
 		width:240px;
 		padding:24px 1rem ;
 		margin: 0 1rem 0 0;
-		background-color: #c5f1ff;
 	}
 
 	.testimonials-section .circular-card img {
-		height:80px;
-		width:80px;
+		height:120px;
+		width:120px;
 	}
 
 	.testimonials-section .circular-card p{
