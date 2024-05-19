@@ -89,7 +89,7 @@ a{
 }
 
 .section-heading h2 {
-	font-weight: 700;
+	font-weight: 600;
 	font-size: 3rem;
 	margin:0 0 0 0;
 }
@@ -97,6 +97,10 @@ a{
 .section-heading a {
 	font-weight: 600;
 }	
+
+.section-heading a:hover{
+	color:#005d85;
+}
 
 .card-link {
 	position: relative;
@@ -261,7 +265,7 @@ a{
 
 	.login-signup-form .login-page-content h2{
 		font-size: 3rem;
-		font-weight: 700;
+		font-weight: 600;
 	}
 
 	.login-signup-form .login-page-content p{
@@ -288,7 +292,7 @@ a{
 
 	.login-signup-form h3 {
 		font-size: 1.5rem;
-		font-weight: 700;
+		font-weight: 600;
 		margin: 0 0 3rem 0;
 		padding: 0 0 0.5rem 0;
 		border-bottom : 2px solid #d58000;
@@ -386,37 +390,29 @@ a{
 }
 
 .artemis-nav .nav-item {
-	margin: 0 0 0 24px;
+	padding: 4px 12px;
+	margin: 0 0 0 0;
+}
+
+.artemis-nav .nav-item:hover , .artemis-nav .nav-item.active{
+	background-color: #ff9900;
+	cursor: pointer;
+	border-radius: 2px;
 }
 
 .artemis-nav .nav-item a {
 	color:#333;
-	font-weight: 700;
+	font-weight: 600;
 	position: relative;
 	font-size: 1rem;
 }
 
-
-
-.artemis-nav .nav-item a:hover, .artemis-nav .nav-item a.active{
-	color:#005d85;
+.artemis-nav .nav-item.active a{
+	color:#000;
 }
 
-.artemis-nav .nav-item a::after, .artemis-nav .nav-item a.active::after {
-	position: absolute;
-	content: '';
-	bottom:-8px;
-	right:0;
-	height:2px;
-	width:0%;
-	background-color: #333;
-	transition:0.3s;
-}
-
-.artemis-nav .nav-item a:hover::after, .artemis-nav .nav-item a.active::after{
-	position: absolute;
-	width:40%;
-	transition: 0.3s;
+.artemis-nav .dropdown-menu.show{
+	padding: 0;
 }
 
 .artemis-nav .dropdown-menu .nav-item {
@@ -427,12 +423,12 @@ a{
 .artemis-nav .dropdown-menu .nav-item a {
 	font-size: 14px;
 	padding: 8px 1rem;
-	font-weight: 500;
+	font-weight: 600;
 	display: block;
 }
 
 .artemis-nav .dropdown-menu .nav-item a:hover{
-	background-color: #d9f6ff;
+	background-color: #ff9900;
 }
 
 @media only screen and (max-width:768px) {
@@ -498,7 +494,7 @@ a{
 /* banner css */
 .banner.homepage-banner {
 	height:80vh;
-	background : url('../images/banner-background.png') center center no-repeat;
+	background : url('../images/night-snow.jpg') center center no-repeat;
 	background-size: cover;
 	position: relative;
 	margin-bottom : 100px;
@@ -768,11 +764,11 @@ a{
 
 .banner.detail-page-banner .destination-summary .summary-rate div > div {
 	font-size: 40px;
-	font-weight: 700;
+	font-weight: 600;
 }
 
 .banner.detail-page-banner .destination-summary p {
-	font-weight: 700;
+	font-weight: 600;
 }
 
 @media only screen and (max-width:575px) {
@@ -833,7 +829,7 @@ a{
 
 .circular-card h2{
 	font-size: 1.2rem;
-	font-weight: 700;
+	font-weight: 600;
 }
 
 .circular-card:hover img{
@@ -866,7 +862,7 @@ a{
 
 .d-card h2 {
 	font-size:24px;
-	font-weight: 700;
+	font-weight: 600;
 	margin: 0 0 8px 0;
 }
 
@@ -876,7 +872,7 @@ a{
 
 .d-card h6 .trek-amount {
 	font-size: 18px;
-	font-weight: 700;
+	font-weight: 600;
 	color:#338500;
 }
 
@@ -938,7 +934,7 @@ a{
 
 .destination-card-2 h2{
 	font-size: 2rem;
-	font-weight: 700;
+	font-weight: 600;
 	margin: 0 0 12px 0;
 }
 
@@ -980,7 +976,7 @@ a{
 
 	.destination-card-2 h2{
 		font-size: 1.3rem;
-		font-weight: 700;
+		font-weight: 600;
 		margin: 0 0 12px 0;
 	}
 	
@@ -1030,7 +1026,7 @@ a{
 
 .destination-card-3 h2{
 	font-size: 24px;
-	font-weight: 700;
+	font-weight: 600;
 }
 
 @media only screen and (max-width:990px) {
@@ -1040,7 +1036,7 @@ a{
 
 	.destination-card-3 h2{
 		font-size: 1.3rem;
-		font-weight: 700;
+		font-weight: 600;
 	}
 
 	.destination-card-3 p{
@@ -1109,7 +1105,6 @@ a{
 .destination-card-6 {
 	margin: 0 0 2rem 0;
 	box-shadow: 0px 0px 4px #ccc;
-	border-radius: 10px;
 	align-items: center;
 }
 
@@ -1169,7 +1164,7 @@ a{
 
 .is-highlights .highlight-images img{
 	border-radius:10%;
-	border:4px solid #d58000;
+	/* border:4px solid #d58000; */
 	height:100%;
 	width:100%;
 }
@@ -1189,7 +1184,7 @@ a{
 
 .is-highlights .highlight-stats .stat-numbers .stat-single-section h5{
 	font-size: 4rem;
-	font-weight: 700;
+	font-weight: 600;
 	color:#f5f5f5;
 	margin:0;
 }
@@ -1364,7 +1359,7 @@ a{
 	   
 	   .is-highlights .highlight-stats .stat-numbers .stat-single-section h5{
 		   font-size: 2.5rem;
-		   font-weight: 700;
+		   font-weight: 600;
 		   margin:0;
 	   }
 	   
@@ -1415,7 +1410,7 @@ a{
 	   
 	   .is-highlights .highlight-stats .stat-numbers .stat-single-section h5{
 		   font-size: 2rem;
-		   font-weight: 700;
+		   font-weight: 600;
 		   margin:0;
 	   }
 	   
@@ -1430,7 +1425,8 @@ a{
 /* testimonials section css */
 
 .testimonials-section {
-	background: linear-gradient(to bottom, #d9f6ff 26%, #fff 100%);
+	/* background: linear-gradient(to bottom, #d9f6ff 26%, #fff 100%); */
+	background-color: #ffe9c7;
 }
 
 .testimonials-section .testimonials-list {
@@ -1513,12 +1509,12 @@ a{
 }
 
 .read-more-text a{
-	font-weight: 700;
+	font-weight: 600;
 	font-size:1rem;
 }
 
 .blog-card h2{
-	font-weight: 700;
+	font-weight: 600;
 	font-size: 24px;
 	margin: 1rem 0 12px;
 }
@@ -1544,7 +1540,7 @@ a{
 	}
 	
 	.read-more-text a{
-		font-weight: 700;
+		font-weight: 600;
 		font-size:0.8rem;
 	}
 
@@ -1588,7 +1584,7 @@ a{
 
 /* blog detail page css  */
 .blog-content .blog-title{
-	font-weight: 700;
+	font-weight: 600;
 	font-size: 2rem;
 	margin:0;
 }
@@ -1821,7 +1817,7 @@ a{
 }
 
 .comment-section .reply-text{
-	font-weight: 700;
+	font-weight: 600;
 	color:#005d85;
 }
 
@@ -1895,7 +1891,7 @@ form.filter-form .form-group {
 form.filter-form h6{
 	font-size: 1rem;
 	margin: 0 0 8px 0;
-	font-weight: 700;
+	font-weight: 600;
 }
 
 form.filter-form input[type="text"] {
@@ -2017,12 +2013,12 @@ form.filter-form label{
 
 h4 {
 	font-size: 24px;
-	font-weight: 700;
+	font-weight: 600;
 }
 
 .content-itinerary ul li span{
 	font-size: 14px;
-	font-weight: 700;
+	font-weight: 600;
 }
 
 #itinerary-detail span {
@@ -2031,7 +2027,7 @@ h4 {
 }
 
 .content-good-to-know-section {
-	border-top : 2px solid #ed8e01;
+	border-top : 1px solid #ed8e01;
 	padding : 24px 0 0 0;
 }
 
@@ -2061,6 +2057,7 @@ width:60px !important;
 
 .booking-form{
 	background-color: #d9f6ff;
+	background-color: #ffe9c7;
 	padding:1rem;
 }
 
@@ -2115,7 +2112,7 @@ width:60px !important;
 
 .booking-form label{
 	font-size: 14px;
-	font-weight: 700;
+	font-weight: 600;
 }
 
 .booking-form .add-info input{
@@ -2162,7 +2159,7 @@ width:60px !important;
 
 .booking-summary h4, .booking-summary h5{
 	font-size: 18px;
-	font-weight: 700;
+	font-weight: 600;
 	margin: 12px 0;
 }
 
@@ -2173,7 +2170,7 @@ width:60px !important;
 
 .booking-summary p{
 	font-size: 1rem;
-	font-weight: 700;
+	font-weight: 600;
 	color:#005d85;
 	margin: 0 0 8px 0;
 }
@@ -2190,12 +2187,12 @@ width:60px !important;
 
 .booking-summary .final-payment p{
 	font-size: 24px;
-	font-weight: 700;
+	font-weight: 600;
 	color:#338500;
 }
 
 .cost-breakdown .final-payable-amount{
-	font-weight: 700;
+	font-weight: 600;
 	font-size: 2rem;
 	color:#338500;
 }
@@ -2221,7 +2218,7 @@ width:60px !important;
  }
 
  .contact-us label {
-	font-weight: 700;
+	font-weight: 500;
  }
  
  .contact-form input[type="text"], .contact-form input[type="email"], .contact-form input[type="number"], .contact-form select, .contact-form option, .contact-form input[type="date"]{
@@ -2302,8 +2299,9 @@ width:60px !important;
 }
 
 .faqs .faq-container h4{
-	font-size: 1rem;
-	color:#005d85;
+	font-size: 1.1rem;
+	font-weight: 600;
+	color:#333;
 }
 
 .faqs .faq-container p{
@@ -2336,7 +2334,7 @@ width:60px !important;
 
  .about-service-images h3{
 	font-size: 24px;
-	font-weight: 700;
+	font-weight: 600;
  }
  .about-service-images p {
 	font-size: 16px;
@@ -2415,7 +2413,7 @@ footer{
 }
 
 .footer-information-section h6{
-	font-weight: 700;
+	font-weight: 600;
 	margin: 0 0 12px 0;
 	color:#f5f5f5;
 }
